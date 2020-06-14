@@ -6,12 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/textview_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/button_start_thread"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="220dp"
-        android:onClick="startThread"
         android:text="Start Thread"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.536"
@@ -22,7 +33,6 @@
         android:id="@+id/button_stop_thread"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="stopThread"
         android:text="Stop Thread"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="@+id/button_start_thread"
